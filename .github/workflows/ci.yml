@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check-examples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add the LarzOS apt repo
+        run: |
+          curl -fsSL https://larzos.com/apt/KEY.asc | sudo gpg --dearmor -o /usr/share/keyrings/larzos-archive-keyring.gpg
+          echo "deb [signed-by=/usr/share/keyrings/larzos-archive-keyring.gpg] https://larzos.com/apt stable main" \
+            | sudo tee /etc/apt/sources.list.d/larzos.list
+          sudo apt-get update
+
+      - name: Install larzscript + larz
+        run: sudo apt-get install -y larzscript larz
+
+      - name: Syntax-check every example
+        run: |
+          for f in examples/*.lz; do
+            echo "checking $f"
+            larzscript --check "$f"
+          done
+
+      - name: Run the pure-language example
+        run: larzscript examples/hello.lz
+
+      - name: Run the wallet examples (sandboxed wallet, CI-local only)
+        env:
+          LARZSCRIPT_PATH: /usr/lib/larzos
+          LARZOS_WALLET_CONF: ${{ github.workspace }}/.ci-wallet/wallet.toml
+          LARZOS_BUDGET_CONF: ${{ github.workspace }}/.ci-wallet/budget.toml
+          LARZOS_WALLET_DIR: ${{ github.workspace }}/.ci-wallet
+        run: |
+          mkdir -p .ci-wallet
+          larzscript examples/budget_guard.lz
+          larzscript examples/pay.lz
