@@ -1,0 +1,30 @@
+# budget_guard.lz - the pattern every money-native LarzOS tool follows:
+# check the wallet BEFORE spending, then meter what actually happened.
+#
+# This mirrors how larz-aid guards gateway AI calls against the "ai"
+# budget in /etc/larzos/wallet.toml before it ever makes a network call.
+#
+# Run it with: LARZSCRIPT_PATH=/usr/lib/larzos larzscript examples/budget_guard.lz
+# (uses the real wallet on this machine - safe to run, it's a $0.01 test debit
+#  against the "demo" category, which is uncapped unless you've set one)
+
+import "larzos/wallet" as wal
+
+fn spend_if_allowed(category, amount, ref, note) {
+  let check = wal.check(category, amount)
+  if not check["ok"] {
+    print("blocked: " + check["reason"])
+    return false
+  }
+  wal.debit(category, amount, ref, note)
+  if check["cap"] < 0.0 {
+    print("spent " + wal.fmt(amount) + " on '" + category + "' - uncapped, no limit set")
+  } else {
+    print("spent " + wal.fmt(amount) + " on '" + category + "' - " +
+          wal.fmt(check["remaining"] - amount) + " left this month")
+  }
+  return true
+}
+
+spend_if_allowed("demo", 0.01, "showcase", "budget_guard.lz example run")
+print("wallet balance: " + wal.fmt(wal.balance()))

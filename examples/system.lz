@@ -1,0 +1,21 @@
+# example system.lz - the whole machine, declared, diffed and applied by
+# `larz-system` (aka `larz apply` / `larz plan` / `larz rollback`).
+#
+# Copy this to /etc/larzos/system.lz, edit it, then:
+#   larz plan     # see the diff, touch nothing
+#   sudo larz apply
+#   larz rollback # undo, instantly - every apply is a snapshot
+
+import "larzos" as larzos
+
+larzos.system({
+  "hostname": "dev-box",
+  "users":    [ { "name": "dev", "groups": ["sudo"], "shell": "/usr/bin/larzsh" } ],
+  "packages": ["larz-branding", "larz", "larz-system", "larz-ai", "larzsh", "git", "curl"],
+  "services": { "larz-ai": "enabled" },
+
+  # money-native from the OS level down: cap what this machine can spend
+  # on AI and package installs before a single API key is even configured.
+  "budget":   { "ai": 5.00, "pkg": 0.00 },
+  "ai":       { "gateway": "https://gateway.larzos.com" },
+})

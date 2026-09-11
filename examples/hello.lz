@@ -1,0 +1,8 @@
+# hello.lz - the smallest Larzscript program.
+# Run it with: larzscript hello.lz
+
+fn greet(name) {
+  return "hello, " + name + " - this is Larzscript on LarzOS"
+}
+
+print(greet("world"))

@@ -1,0 +1,16 @@
+# pay.lz - sending money is a language-level idea on LarzOS, not a library
+# bolted on after the fact. `wallet`, `price`, `pay` and `require` are
+# reserved words in Larzscript precisely so payment code always looks and
+# reads the same way, everywhere.
+#
+# With the default `provider = "local"` in /etc/larzos/wallet.toml this is
+# an IOU - a ledger entry and a receipt in /var/lib/larzos/wallet/receipts,
+# nothing leaves the machine. Point the wallet at "cryptolarz" or "larzpay"
+# to make it real.
+#
+# Run it with: LARZSCRIPT_PATH=/usr/lib/larzos larzscript examples/pay.lz
+
+import "larzos/wallet" as wal
+
+let receipt = wal.pay("alice", 0.05, "thanks for the code review")
+print("paid alice " + wal.fmt(receipt["amount"]) + " - ref: " + receipt["ref"])
