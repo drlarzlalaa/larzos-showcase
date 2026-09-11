@@ -1,0 +1,11 @@
+# This repo is a showcase, not the LarzOS source tree - bugs and feature
+# requests for the OS itself belong upstream, where the people who can fix
+# them actually work.
+blank_issues_enabled: false
+contact_links:
+  - name: LarzOS bug report
+    url: https://github.com/larz-scripter/larzos-linux/issues/new
+    about: Found a bug in LarzOS itself (larz, larzsh, larz-pkg, larz-aid, Larzscript)? Report it upstream here.
+  - name: LarzOS issue tracker
+    url: https://github.com/larz-scripter/larzos-linux/issues
+    about: Browse existing LarzOS issues and discussions.
