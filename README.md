@@ -84,6 +84,72 @@ Run any of them with `larzscript examples/<file>.lz` on a LarzOS box.
 run those two with the OS library on the path:
 `LARZSCRIPT_PATH=/usr/lib/larzos larzscript examples/budget_guard.lz`.
 
+## More from this account
+
+The same author's other repositories. Larzscript is the language LarzOS is
+written in, so most of these are written in it too; the last group is
+ordinary Python, for the jobs where its ecosystem is the right tool. All
+31 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+spell out what they do **not** do, and most compare their output with an
+independent Python implementation or with published reference data before the
+tests were written.
+
+### LarzOS wallet tools (Larzscript)
+
+| Repo | What it does |
+|---|---|
+| [`larz-meter`](https://github.com/drlarzlalaa/larz-meter) | Wraps any command with wallet metering: check the budget, run it, debit only on success |
+| [`larz-budget-watch`](https://github.com/drlarzlalaa/larz-budget-watch) | Warns before a wallet budget is blown, with Nagios-style exit codes for cron |
+| [`larz-receipts`](https://github.com/drlarzlalaa/larz-receipts) | Renders the wallet ledger as a report: by month, by category, or as JSON |
+
+### General-purpose tools (Larzscript)
+
+| Repo | What it does |
+|---|---|
+| [`larz-cronlint`](https://github.com/drlarzlalaa/larz-cronlint) | Expands a crontab for one day and shows which minutes many jobs start at once |
+| [`larz-csvstat`](https://github.com/drlarzlalaa/larz-csvstat) | Column summaries, frequency tables and text histograms for any CSV file |
+| [`larz-logstat`](https://github.com/drlarzlalaa/larz-logstat) | Visitors, top paths, hourly load, errors and bots from Apache/Nginx access logs |
+| [`larz-textstat`](https://github.com/drlarzlalaa/larz-textstat) | Word counts, Flesch readability, reading time, top words and longest sentences |
+
+### Science and mathematics projects (Larzscript)
+
+Each one is a single `.lz` file with tests and a README built from real
+program output. Several are teaching tools, and say so.
+
+| Repo | What it does |
+|---|---|
+| [`larzscript-superpowers`](https://github.com/drlarzlalaa/larzscript-superpowers) | What physics says about tunnelling through walls, time travel and levitation, plus the GPS check |
+| [`larzscript-worldweight`](https://github.com/drlarzlalaa/larzscript-worldweight) | Weight, jumps and orbits on 17 Solar System bodies, checked against NASA's fact sheet |
+| [`larzscript-moonphase`](https://github.com/drlarzlalaa/larzscript-moonphase) | Lunar phases to the minute (Meeus), checked against eclipse times |
+| [`larzscript-transferwindow`](https://github.com/drlarzlalaa/larzscript-transferwindow) | An interplanetary launch-window planner: Hohmann transfers and a real ephemeris |
+| [`larzscript-integrators`](https://github.com/drlarzlalaa/larzscript-integrators) | Euler, leapfrog and RK4 on an orbit: which conserves energy, which keeps time |
+| [`larzscript-pendulum`](https://github.com/drlarzlalaa/larzscript-pendulum) | A pendulum's period against its amplitude: the exact formula and a simulation agree, the textbook one does not |
+| [`larzscript-lorenz`](https://github.com/drlarzlalaa/larzscript-lorenz) | Deterministic chaos: the Lorenz system, the butterfly effect and the Lyapunov exponent |
+| [`larzscript-halflife`](https://github.com/drlarzlalaa/larzscript-halflife) | Radioactive decay, radiocarbon-style ages and decay chains to secular equilibrium |
+| [`larzscript-hyperspace`](https://github.com/drlarzlalaa/larzscript-hyperspace) | The geometry of higher dimensions: ball volumes, n-cubes and a rotating tesseract |
+| [`larzscript-neuron`](https://github.com/drlarzlalaa/larzscript-neuron) | A spiking-neuron lab: Hodgkin-Huxley action potentials and Izhikevich firing patterns |
+| [`larzscript-connectome`](https://github.com/drlarzlalaa/larzscript-connectome) | The real C. elegans wiring diagram: hubs, touch-reflex circuits, signal spread |
+| [`larzscript-wormsim`](https://github.com/drlarzlalaa/larzscript-wormsim) | Can the wiring diagram alone predict the touch reflex? An honest negative result |
+| [`larzscript-genelab`](https://github.com/drlarzlalaa/larzscript-genelab) | The genetic code and point mutations, on the real HBB gene and the sickle-cell variant |
+| [`larzscript-allelefreq`](https://github.com/drlarzlalaa/larzscript-allelefreq) | Hardy-Weinberg, carrier frequencies and genetic drift in small populations |
+| [`larzscript-epidemic`](https://github.com/drlarzlalaa/larzscript-epidemic) | The SIR epidemic model, checked against its exact peak and final-size solutions |
+| [`larzscript-primes`](https://github.com/drlarzlalaa/larzscript-primes) | Miller-Rabin, factoring, Carmichael numbers, toy RSA, with exactness limits enforced |
+| [`larzscript-automata`](https://github.com/drlarzlalaa/larzscript-automata) | Conway's Life (the R-pentomino takes 1,103 generations) and Wolfram's elementary rules |
+| [`larzscript-sortlab`](https://github.com/drlarzlalaa/larzscript-sortlab) | Six sorting algorithms, counted: comparisons and moves on four kinds of input |
+
+### Python tools
+
+Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
+
+| Repo | What it does |
+|---|---|
+| [`py-emailhygiene`](https://github.com/drlarzlalaa/py-emailhygiene) | Finds typo domains, bad syntax, disposable providers, role accounts and duplicates in an email list |
+| [`py-bounceparse`](https://github.com/drlarzlalaa/py-bounceparse) | Reads bounce messages and reports who failed, why, and how many per hour |
+| [`py-sitemapcheck`](https://github.com/drlarzlalaa/py-sitemapcheck) | Validates sitemap.xml files and indexes offline, and refuses entity bombs |
+| [`py-robotscheck`](https://github.com/drlarzlalaa/py-robotscheck) | Parses robots.txt and tests URLs against it following RFC 9309, with a linter |
+| [`py-redirectlint`](https://github.com/drlarzlalaa/py-redirectlint) | Finds chains, loops, conflicts and dead ends in a redirect map |
+| [`py-utmlint`](https://github.com/drlarzlalaa/py-utmlint) | Checks campaign links (UTM tags) for typos and spelling drift, and builds correct ones |
+
 ## Getting LarzOS
 
 Install and image instructions live at
