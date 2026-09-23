@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-31 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+36 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -107,6 +107,7 @@ tests were written.
 | Repo | What it does |
 |---|---|
 | [`larz-cronlint`](https://github.com/drlarzlalaa/larz-cronlint) | Expands a crontab for one day and shows which minutes many jobs start at once |
+| [`larz-dupes`](https://github.com/drlarzlalaa/larz-dupes) | Finds duplicate files by content, read-only: groups by size, then SHA-256, and totals the wasted space |
 | [`larz-csvstat`](https://github.com/drlarzlalaa/larz-csvstat) | Column summaries, frequency tables and text histograms for any CSV file |
 | [`larz-logstat`](https://github.com/drlarzlalaa/larz-logstat) | Visitors, top paths, hourly load, errors and bots from Apache/Nginx access logs |
 | [`larz-textstat`](https://github.com/drlarzlalaa/larz-textstat) | Word counts, Flesch readability, reading time, top words and longest sentences |
@@ -124,6 +125,7 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-transferwindow`](https://github.com/drlarzlalaa/larzscript-transferwindow) | An interplanetary launch-window planner: Hohmann transfers and a real ephemeris |
 | [`larzscript-integrators`](https://github.com/drlarzlalaa/larzscript-integrators) | Euler, leapfrog and RK4 on an orbit: which conserves energy, which keeps time |
 | [`larzscript-pendulum`](https://github.com/drlarzlalaa/larzscript-pendulum) | A pendulum's period against its amplitude: the exact formula and a simulation agree, the textbook one does not |
+| [`larzscript-heat`](https://github.com/drlarzlalaa/larzscript-heat) | Heat diffusion: the explicit scheme blows up past r = 1/2, Crank-Nicolson stays bounded but not always accurate |
 | [`larzscript-lorenz`](https://github.com/drlarzlalaa/larzscript-lorenz) | Deterministic chaos: the Lorenz system, the butterfly effect and the Lyapunov exponent |
 | [`larzscript-halflife`](https://github.com/drlarzlalaa/larzscript-halflife) | Radioactive decay, radiocarbon-style ages and decay chains to secular equilibrium |
 | [`larzscript-hyperspace`](https://github.com/drlarzlalaa/larzscript-hyperspace) | The geometry of higher dimensions: ball volumes, n-cubes and a rotating tesseract |
@@ -133,6 +135,7 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-genelab`](https://github.com/drlarzlalaa/larzscript-genelab) | The genetic code and point mutations, on the real HBB gene and the sickle-cell variant |
 | [`larzscript-allelefreq`](https://github.com/drlarzlalaa/larzscript-allelefreq) | Hardy-Weinberg, carrier frequencies and genetic drift in small populations |
 | [`larzscript-epidemic`](https://github.com/drlarzlalaa/larzscript-epidemic) | The SIR epidemic model, checked against its exact peak and final-size solutions |
+| [`larzscript-montecarlo`](https://github.com/drlarzlalaa/larzscript-montecarlo) | Estimating pi, the 1/sqrt(N) error law, the birthday problem and Monty Hall against their exact answers |
 | [`larzscript-primes`](https://github.com/drlarzlalaa/larzscript-primes) | Miller-Rabin, factoring, Carmichael numbers, toy RSA, with exactness limits enforced |
 | [`larzscript-automata`](https://github.com/drlarzlalaa/larzscript-automata) | Conway's Life (the R-pentomino takes 1,103 generations) and Wolfram's elementary rules |
 | [`larzscript-sortlab`](https://github.com/drlarzlalaa/larzscript-sortlab) | Six sorting algorithms, counted: comparisons and moves on four kinds of input |
@@ -149,6 +152,8 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-robotscheck`](https://github.com/drlarzlalaa/py-robotscheck) | Parses robots.txt and tests URLs against it following RFC 9309, with a linter |
 | [`py-redirectlint`](https://github.com/drlarzlalaa/py-redirectlint) | Finds chains, loops, conflicts and dead ends in a redirect map |
 | [`py-utmlint`](https://github.com/drlarzlalaa/py-utmlint) | Checks campaign links (UTM tags) for typos and spelling drift, and builds correct ones |
+| [`py-emailauth`](https://github.com/drlarzlalaa/py-emailauth) | Lints SPF, DMARC and DKIM records offline: the 10-lookup limit, policy tags and RSA key size |
+| [`py-pageaudit`](https://github.com/drlarzlalaa/py-pageaudit) | Audits HTML pages offline: title, description, canonical, headings, alt text, robots, Open Graph, JSON-LD |
 
 ## Getting LarzOS
 
