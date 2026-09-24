@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-59 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+60 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -109,6 +109,7 @@ tests were written.
 | [`larz-cronlint`](https://github.com/drlarzlalaa/larz-cronlint) | Expands a crontab for one day and shows which minutes many jobs start at once |
 | [`larz-dupes`](https://github.com/drlarzlalaa/larz-dupes) | Finds duplicate files by content, read-only: groups by size, then SHA-256, and totals the wasted space |
 | [`larz-diff`](https://github.com/drlarzlalaa/larz-diff) | A line diff with the shortest possible edit script; unified output that `patch` can apply, plus edit distance |
+| [`larz-calc`](https://github.com/drlarzlalaa/larz-calc) | A calculator with real operator precedence (shunting-yard), fractional powers and scientific notation; checked against Python's arithmetic |
 | [`larz-csvstat`](https://github.com/drlarzlalaa/larz-csvstat) | Column summaries, frequency tables and text histograms for any CSV file |
 | [`larz-logstat`](https://github.com/drlarzlalaa/larz-logstat) | Visitors, top paths, hourly load, errors and bots from Apache/Nginx access logs |
 | [`larz-textstat`](https://github.com/drlarzlalaa/larz-textstat) | Word counts, Flesch readability, reading time, top words and longest sentences |
