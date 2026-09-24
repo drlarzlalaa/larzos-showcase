@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-62 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+64 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -146,6 +146,7 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-secretary`](https://github.com/drlarzlalaa/larzscript-secretary) | The secretary problem: reject the first 37% and the chance of hiring the best tends to 1/e, exact and simulated |
 | [`larzscript-markov`](https://github.com/drlarzlalaa/larzscript-markov) | Markov chains: stationary distributions by iteration and by simulation, and the chains that never settle |
 | [`larzscript-pagerank`](https://github.com/drlarzlalaa/larzscript-pagerank) | PageRank on a small link graph, checked against an exact linear-system solution |
+| [`larzscript-paths`](https://github.com/drlarzlalaa/larzscript-paths) | Shortest paths: Dijkstra and Bellman-Ford with negative cycles, checked against Floyd-Warshall and a path verifier |
 | [`larzscript-regex`](https://github.com/drlarzlalaa/larzscript-regex) | A regular-expression engine (Thompson NFA, no backtracking blow-up), checked against Python's `re` on over 900 pattern/text pairs |
 | [`larzscript-sudoku`](https://github.com/drlarzlalaa/larzscript-sudoku) | A Sudoku solver and uniqueness checker (fewest-candidates-first search), checked against an independent Python solver |
 | [`larzscript-queens`](https://github.com/drlarzlalaa/larzscript-queens) | The n-queens puzzle: all solutions and symmetry classes, matching the published sequences and a bitmask solver |
@@ -180,6 +181,7 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-csvdoctor`](https://github.com/drlarzlalaa/py-csvdoctor) | Diagnoses CSV files offline: encoding, BOM, delimiter, ragged rows, duplicate headers, stray whitespace, mixed line endings |
 | [`py-htaccesslint`](https://github.com/drlarzlalaa/py-htaccesslint) | Lints Apache .htaccess files offline: unbalanced containers, 2.2 access rules, headers without `always`, HSTS and CSP mistakes, typos |
 | [`py-envcheck`](https://github.com/drlarzlalaa/py-envcheck) | Lints .env files and compares them with .env.example offline; never prints a value |
+| [`py-semver`](https://github.com/drlarzlalaa/py-semver) | Semantic Versioning 2.0.0: validate, compare, bump and match ranges, following the specification |
 
 ## Getting LarzOS
 
