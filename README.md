@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-36 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+41 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -124,9 +124,11 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-moonphase`](https://github.com/drlarzlalaa/larzscript-moonphase) | Lunar phases to the minute (Meeus), checked against eclipse times |
 | [`larzscript-transferwindow`](https://github.com/drlarzlalaa/larzscript-transferwindow) | An interplanetary launch-window planner: Hohmann transfers and a real ephemeris |
 | [`larzscript-integrators`](https://github.com/drlarzlalaa/larzscript-integrators) | Euler, leapfrog and RK4 on an orbit: which conserves energy, which keeps time |
+| [`larzscript-projectile`](https://github.com/drlarzlalaa/larzscript-projectile) | A thrown object with and without air resistance: the exact vacuum formulas, then drag and the best launch angle |
 | [`larzscript-pendulum`](https://github.com/drlarzlalaa/larzscript-pendulum) | A pendulum's period against its amplitude: the exact formula and a simulation agree, the textbook one does not |
 | [`larzscript-heat`](https://github.com/drlarzlalaa/larzscript-heat) | Heat diffusion: the explicit scheme blows up past r = 1/2, Crank-Nicolson stays bounded but not always accurate |
 | [`larzscript-lorenz`](https://github.com/drlarzlalaa/larzscript-lorenz) | Deterministic chaos: the Lorenz system, the butterfly effect and the Lyapunov exponent |
+| [`larzscript-fourier`](https://github.com/drlarzlalaa/larzscript-fourier) | The fast Fourier transform: spectra, spectral leakage (rectangular vs Hann window), Parseval's theorem, DFT vs FFT cost |
 | [`larzscript-halflife`](https://github.com/drlarzlalaa/larzscript-halflife) | Radioactive decay, radiocarbon-style ages and decay chains to secular equilibrium |
 | [`larzscript-hyperspace`](https://github.com/drlarzlalaa/larzscript-hyperspace) | The geometry of higher dimensions: ball volumes, n-cubes and a rotating tesseract |
 | [`larzscript-neuron`](https://github.com/drlarzlalaa/larzscript-neuron) | A spiking-neuron lab: Hodgkin-Huxley action potentials and Izhikevich firing patterns |
@@ -153,6 +155,9 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-redirectlint`](https://github.com/drlarzlalaa/py-redirectlint) | Finds chains, loops, conflicts and dead ends in a redirect map |
 | [`py-utmlint`](https://github.com/drlarzlalaa/py-utmlint) | Checks campaign links (UTM tags) for typos and spelling drift, and builds correct ones |
 | [`py-emailauth`](https://github.com/drlarzlalaa/py-emailauth) | Lints SPF, DMARC and DKIM records offline: the 10-lookup limit, policy tags and RSA key size |
+| [`py-headercheck`](https://github.com/drlarzlalaa/py-headercheck) | Lints HTTP security headers offline: HSTS, CSP, cookies, framing, referrer policy |
+| [`py-feedcheck`](https://github.com/drlarzlalaa/py-feedcheck) | Validates RSS 2.0 and Atom feeds offline: required elements, RFC 822/3339 dates, duplicate IDs, enclosures |
+| [`py-hreflangcheck`](https://github.com/drlarzlalaa/py-hreflangcheck) | Validates hreflang annotations across the pages of a multilingual site: codes, self-references, return links |
 | [`py-pageaudit`](https://github.com/drlarzlalaa/py-pageaudit) | Audits HTML pages offline: title, description, canonical, headings, alt text, robots, Open Graph, JSON-LD |
 
 ## Getting LarzOS
