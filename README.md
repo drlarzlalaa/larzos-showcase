@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-44 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+46 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -140,6 +140,7 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-montecarlo`](https://github.com/drlarzlalaa/larzscript-montecarlo) | Estimating pi, the 1/sqrt(N) error law, the birthday problem and Monty Hall against their exact answers |
 | [`larzscript-bayes`](https://github.com/drlarzlalaa/larzscript-bayes) | Why a positive test is usually less alarming than it sounds: Bayes' rule, a simulated population and repeat tests |
 | [`larzscript-knapsack`](https://github.com/drlarzlalaa/larzscript-knapsack) | The knapsack problem: dynamic programming vs brute force, and how often greedy loses |
+| [`larzscript-gambler`](https://github.com/drlarzlalaa/larzscript-gambler) | The gambler's ruin problem: exact formulas vs simulation, and why a small roulette edge makes doubling your money unlikely |
 | [`larzscript-primes`](https://github.com/drlarzlalaa/larzscript-primes) | Miller-Rabin, factoring, Carmichael numbers, toy RSA, with exactness limits enforced |
 | [`larzscript-automata`](https://github.com/drlarzlalaa/larzscript-automata) | Conway's Life (the R-pentomino takes 1,103 generations) and Wolfram's elementary rules |
 | [`larzscript-sortlab`](https://github.com/drlarzlalaa/larzscript-sortlab) | Six sorting algorithms, counted: comparisons and moves on four kinds of input |
@@ -162,6 +163,7 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-hreflangcheck`](https://github.com/drlarzlalaa/py-hreflangcheck) | Validates hreflang annotations across the pages of a multilingual site: codes, self-references, return links |
 | [`py-pageaudit`](https://github.com/drlarzlalaa/py-pageaudit) | Audits HTML pages offline: title, description, canonical, headings, alt text, robots, Open Graph, JSON-LD |
 | [`py-safeedit`](https://github.com/drlarzlalaa/py-safeedit) | Bulk regex edits across a tree with a dry run, backup, additive proof, per-file lint and restore |
+| [`py-logscan`](https://github.com/drlarzlalaa/py-logscan) | Summarises Apache and nginx access logs offline: status classes, top paths, 404s, bots, hourly traffic |
 
 ## Getting LarzOS
 
