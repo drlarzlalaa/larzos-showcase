@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-55 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+56 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -173,6 +173,7 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-logscan`](https://github.com/drlarzlalaa/py-logscan) | Summarises Apache and nginx access logs offline: status classes, top paths, 404s, bots, hourly traffic |
 | [`py-jsonldcheck`](https://github.com/drlarzlalaa/py-jsonldcheck) | Validates schema.org JSON-LD in HTML pages offline: Article, Organization, BreadcrumbList, FAQPage |
 | [`py-linkaudit`](https://github.com/drlarzlalaa/py-linkaudit) | Audits a static site's internal links offline: broken pages, images and scripts, missing #anchors, orphan pages |
+| [`py-csvdoctor`](https://github.com/drlarzlalaa/py-csvdoctor) | Diagnoses CSV files offline: encoding, BOM, delimiter, ragged rows, duplicate headers, stray whitespace, mixed line endings |
 
 ## Getting LarzOS
 
