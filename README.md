@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-57 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+58 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -146,6 +146,7 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-markov`](https://github.com/drlarzlalaa/larzscript-markov) | Markov chains: stationary distributions by iteration and by simulation, and the chains that never settle |
 | [`larzscript-regex`](https://github.com/drlarzlalaa/larzscript-regex) | A regular-expression engine (Thompson NFA, no backtracking blow-up), checked against Python's `re` on over 900 pattern/text pairs |
 | [`larzscript-sudoku`](https://github.com/drlarzlalaa/larzscript-sudoku) | A Sudoku solver and uniqueness checker (fewest-candidates-first search), checked against an independent Python solver |
+| [`larzscript-queens`](https://github.com/drlarzlalaa/larzscript-queens) | The n-queens puzzle: all solutions and symmetry classes, matching the published sequences and a bitmask solver |
 | [`larzscript-huffman`](https://github.com/drlarzlalaa/larzscript-huffman) | Huffman coding: optimal prefix codes, the entropy bound they can't beat, and a decode check |
 | [`larzscript-bloom`](https://github.com/drlarzlalaa/larzscript-bloom) | A Bloom filter: the exact false-positive theory against a simulation, and sizing a filter for a target rate |
 | [`larzscript-mandelbrot`](https://github.com/drlarzlalaa/larzscript-mandelbrot) | The Mandelbrot set in text and an estimate of its area; every pixel matches a Python reference |
