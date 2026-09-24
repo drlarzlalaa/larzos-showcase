@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-48 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+49 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -142,6 +142,7 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-knapsack`](https://github.com/drlarzlalaa/larzscript-knapsack) | The knapsack problem: dynamic programming vs brute force, and how often greedy loses |
 | [`larzscript-gambler`](https://github.com/drlarzlalaa/larzscript-gambler) | The gambler's ruin problem: exact formulas vs simulation, and why a small roulette edge makes doubling your money unlikely |
 | [`larzscript-secretary`](https://github.com/drlarzlalaa/larzscript-secretary) | The secretary problem: reject the first 37% and the chance of hiring the best tends to 1/e, exact and simulated |
+| [`larzscript-markov`](https://github.com/drlarzlalaa/larzscript-markov) | Markov chains: stationary distributions by iteration and by simulation, and the chains that never settle |
 | [`larzscript-primes`](https://github.com/drlarzlalaa/larzscript-primes) | Miller-Rabin, factoring, Carmichael numbers, toy RSA, with exactness limits enforced |
 | [`larzscript-automata`](https://github.com/drlarzlalaa/larzscript-automata) | Conway's Life (the R-pentomino takes 1,103 generations) and Wolfram's elementary rules |
 | [`larzscript-sortlab`](https://github.com/drlarzlalaa/larzscript-sortlab) | Six sorting algorithms, counted: comparisons and moves on four kinds of input |
