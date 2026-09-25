@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-88 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+90 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -112,6 +112,7 @@ tests were written.
 | [`larz-calc`](https://github.com/drlarzlalaa/larz-calc) | A calculator with real operator precedence (shunting-yard), fractional powers and scientific notation; checked against Python's arithmetic |
 | [`larz-hash`](https://github.com/drlarzlalaa/larz-hash) | SHA-256, SHA-1, MD5, CRC-32 and Adler-32 in pure Larzscript (no bit operators); identical to hashlib and zlib on 725+ digests |
 | [`larz-encode`](https://github.com/drlarzlalaa/larz-encode) | Base64, Base64url, Base32, hex and URL encoding with strict decoding; identical to Python on 780+ lines |
+| [`larz-date`](https://github.com/drlarzlalaa/larz-date) | Calendar arithmetic in whole numbers: weekdays, date differences, adding days, calendars and Easter; identical to Python's datetime on 18,000+ operations |
 | [`larz-csvstat`](https://github.com/drlarzlalaa/larz-csvstat) | Column summaries, frequency tables and text histograms for any CSV file |
 | [`larz-logstat`](https://github.com/drlarzlalaa/larz-logstat) | Visitors, top paths, hourly load, errors and bots from Apache/Nginx access logs |
 | [`larz-textstat`](https://github.com/drlarzlalaa/larz-textstat) | Word counts, Flesch readability, reading time, top words and longest sentences |
@@ -206,6 +207,7 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-csvdiff`](https://github.com/drlarzlalaa/py-csvdiff) | Compares two CSV files by key: added, removed and changed rows with cell-level changes; ignores row and column order |
 | [`py-placeholders`](https://github.com/drlarzlalaa/py-placeholders) | Finds unfilled template placeholders and missing merge fields in emails before sending, in every common syntax |
 | [`py-sqlcheck`](https://github.com/drlarzlalaa/py-sqlcheck) | Catches dangerous and mistaken SQL before you run it: UPDATE or DELETE without WHERE, = NULL, DROP and TRUNCATE, unbalanced quotes; executes nothing |
+| [`py-diskreport`](https://github.com/drlarzlalaa/py-diskreport) | A read-only report of where the disk space went: biggest folders, files and types, with old, empty and same-size hints |
 
 ## Getting LarzOS
 
