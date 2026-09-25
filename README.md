@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-86 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+88 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -161,6 +161,7 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-bigint`](https://github.com/drlarzlalaa/larzscript-bigint) | Arbitrary-precision integers: add, subtract, multiply, divide, gcd, powers, factorials, Fibonacci; digit-for-digit identical to Python ints on 1,000+ operations |
 | [`larzscript-matrix`](https://github.com/drlarzlalaa/larzscript-matrix) | Exact linear algebra with fractions: solve, determinant, inverse, rank; refuses rather than risk an inexact value; checked against Python Fractions |
 | [`larzscript-tsp`](https://github.com/drlarzlalaa/larzscript-tsp) | The travelling salesman problem: exact brute force, nearest neighbour and 2-opt, with a study of how good the heuristics are |
+| [`larzscript-astar`](https://github.com/drlarzlalaa/larzscript-astar) | BFS, A* and greedy best-first search through grid mazes, with ASCII paths and a comparison study; identical to a Python heapq reference |
 | [`larzscript-sat`](https://github.com/drlarzlalaa/larzscript-sat) | A DPLL SAT solver: DIMACS input, verified models, model counting, random 3-SAT; every verdict checked against brute force |
 | [`larzscript-bloom`](https://github.com/drlarzlalaa/larzscript-bloom) | A Bloom filter: the exact false-positive theory against a simulation, and sizing a filter for a target rate |
 | [`larzscript-mandelbrot`](https://github.com/drlarzlalaa/larzscript-mandelbrot) | The Mandelbrot set in text and an estimate of its area; every pixel matches a Python reference |
@@ -204,6 +205,7 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-cachecheck`](https://github.com/drlarzlalaa/py-cachecheck) | Checks HTTP caching headers offline: Cache-Control, ETag, Vary, cookies, compression and Cloudflare cache status, judged by content type |
 | [`py-csvdiff`](https://github.com/drlarzlalaa/py-csvdiff) | Compares two CSV files by key: added, removed and changed rows with cell-level changes; ignores row and column order |
 | [`py-placeholders`](https://github.com/drlarzlalaa/py-placeholders) | Finds unfilled template placeholders and missing merge fields in emails before sending, in every common syntax |
+| [`py-sqlcheck`](https://github.com/drlarzlalaa/py-sqlcheck) | Catches dangerous and mistaken SQL before you run it: UPDATE or DELETE without WHERE, = NULL, DROP and TRUNCATE, unbalanced quotes; executes nothing |
 
 ## Getting LarzOS
 
