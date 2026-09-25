@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-80 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+82 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -159,6 +159,7 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-loan`](https://github.com/drlarzlalaa/larzscript-loan) | Loan payments, amortization schedules, extra-payment savings and savings growth in integer cents; identical to a Decimal reference |
 | [`larzscript-bigint`](https://github.com/drlarzlalaa/larzscript-bigint) | Arbitrary-precision integers: add, subtract, multiply, divide, gcd, powers, factorials, Fibonacci; digit-for-digit identical to Python ints on 1,000+ operations |
 | [`larzscript-matrix`](https://github.com/drlarzlalaa/larzscript-matrix) | Exact linear algebra with fractions: solve, determinant, inverse, rank; refuses rather than risk an inexact value; checked against Python Fractions |
+| [`larzscript-tsp`](https://github.com/drlarzlalaa/larzscript-tsp) | The travelling salesman problem: exact brute force, nearest neighbour and 2-opt, with a study of how good the heuristics are |
 | [`larzscript-bloom`](https://github.com/drlarzlalaa/larzscript-bloom) | A Bloom filter: the exact false-positive theory against a simulation, and sizing a filter for a target rate |
 | [`larzscript-mandelbrot`](https://github.com/drlarzlalaa/larzscript-mandelbrot) | The Mandelbrot set in text and an estimate of its area; every pixel matches a Python reference |
 | [`larzscript-primes`](https://github.com/drlarzlalaa/larzscript-primes) | Miller-Rabin, factoring, Carmichael numbers, toy RSA, with exactness limits enforced |
@@ -198,6 +199,7 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-sitemapdiff`](https://github.com/drlarzlalaa/py-sitemapdiff) | Compares two sitemap.xml versions offline and warns on bulk lastmod stamping, backwards or future dates and sudden drops |
 | [`py-jsonlint`](https://github.com/drlarzlalaa/py-jsonlint) | Lints, formats, minifies and queries JSON offline: line and column errors with hints, duplicate keys, integers beyond 2^53 |
 | [`py-mailtrace`](https://github.com/drlarzlalaa/py-mailtrace) | Diagnoses a received email from its headers, offline: delivery path and delays, SPF/DKIM/DMARC results, alignment, unsubscribe headers |
+| [`py-cachecheck`](https://github.com/drlarzlalaa/py-cachecheck) | Checks HTTP caching headers offline: Cache-Control, ETag, Vary, cookies, compression and Cloudflare cache status, judged by content type |
 
 ## Getting LarzOS
 
