@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-84 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+86 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -155,6 +155,7 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-sudoku`](https://github.com/drlarzlalaa/larzscript-sudoku) | A Sudoku solver and uniqueness checker (fewest-candidates-first search), checked against an independent Python solver |
 | [`larzscript-queens`](https://github.com/drlarzlalaa/larzscript-queens) | The n-queens puzzle: all solutions and symmetry classes, matching the published sequences and a bitmask solver |
 | [`larzscript-huffman`](https://github.com/drlarzlalaa/larzscript-huffman) | Huffman coding: optimal prefix codes, the entropy bound they can't beat, and a decode check |
+| [`larzscript-bwt`](https://github.com/drlarzlalaa/larzscript-bwt) | The Burrows-Wheeler transform (the core of bzip2) with its exact inverse, move-to-front and run-length; identical to a Python reference |
 | [`larzscript-lzw`](https://github.com/drlarzlalaa/larzscript-lzw) | Lempel-Ziv-Welch compression and decompression, identical to an independent Python implementation, including the full-dictionary case |
 | [`larzscript-loan`](https://github.com/drlarzlalaa/larzscript-loan) | Loan payments, amortization schedules, extra-payment savings and savings growth in integer cents; identical to a Decimal reference |
 | [`larzscript-bigint`](https://github.com/drlarzlalaa/larzscript-bigint) | Arbitrary-precision integers: add, subtract, multiply, divide, gcd, powers, factorials, Fibonacci; digit-for-digit identical to Python ints on 1,000+ operations |
@@ -202,6 +203,7 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-mailtrace`](https://github.com/drlarzlalaa/py-mailtrace) | Diagnoses a received email from its headers, offline: delivery path and delays, SPF/DKIM/DMARC results, alignment, unsubscribe headers |
 | [`py-cachecheck`](https://github.com/drlarzlalaa/py-cachecheck) | Checks HTTP caching headers offline: Cache-Control, ETag, Vary, cookies, compression and Cloudflare cache status, judged by content type |
 | [`py-csvdiff`](https://github.com/drlarzlalaa/py-csvdiff) | Compares two CSV files by key: added, removed and changed rows with cell-level changes; ignores row and column order |
+| [`py-placeholders`](https://github.com/drlarzlalaa/py-placeholders) | Finds unfilled template placeholders and missing merge fields in emails before sending, in every common syntax |
 
 ## Getting LarzOS
 
