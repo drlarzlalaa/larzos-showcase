@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-74 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+76 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -156,6 +156,7 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-huffman`](https://github.com/drlarzlalaa/larzscript-huffman) | Huffman coding: optimal prefix codes, the entropy bound they can't beat, and a decode check |
 | [`larzscript-lzw`](https://github.com/drlarzlalaa/larzscript-lzw) | Lempel-Ziv-Welch compression and decompression, identical to an independent Python implementation, including the full-dictionary case |
 | [`larzscript-loan`](https://github.com/drlarzlalaa/larzscript-loan) | Loan payments, amortization schedules, extra-payment savings and savings growth in integer cents; identical to a Decimal reference |
+| [`larzscript-bigint`](https://github.com/drlarzlalaa/larzscript-bigint) | Arbitrary-precision integers: add, subtract, multiply, divide, gcd, powers, factorials, Fibonacci; digit-for-digit identical to Python ints on 1,000+ operations |
 | [`larzscript-bloom`](https://github.com/drlarzlalaa/larzscript-bloom) | A Bloom filter: the exact false-positive theory against a simulation, and sizing a filter for a target rate |
 | [`larzscript-mandelbrot`](https://github.com/drlarzlalaa/larzscript-mandelbrot) | The Mandelbrot set in text and an estimate of its area; every pixel matches a Python reference |
 | [`larzscript-primes`](https://github.com/drlarzlalaa/larzscript-primes) | Miller-Rabin, factoring, Carmichael numbers, toy RSA, with exactness limits enforced |
@@ -192,6 +193,7 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-zonediff`](https://github.com/drlarzlalaa/py-zonediff) | Lints DNS zone files and diffs two versions offline, flagging risky changes to MX, NS, SPF, DMARC and DKIM |
 | [`py-redact`](https://github.com/drlarzlalaa/py-redact) | Scrubs secrets and personal data from logs before you share them: keys, tokens, passwords, emails, IPs, card numbers; consistent placeholders |
 | [`py-rellint`](https://github.com/drlarzlalaa/py-rellint) | Audits outbound links offline: affiliate and sponsored links without rel=sponsored, missing disclosure wording, target=_blank |
+| [`py-sitemapdiff`](https://github.com/drlarzlalaa/py-sitemapdiff) | Compares two sitemap.xml versions offline and warns on bulk lastmod stamping, backwards or future dates and sudden drops |
 
 ## Getting LarzOS
 
