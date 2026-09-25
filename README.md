@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-90 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+92 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -163,6 +163,7 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-matrix`](https://github.com/drlarzlalaa/larzscript-matrix) | Exact linear algebra with fractions: solve, determinant, inverse, rank; refuses rather than risk an inexact value; checked against Python Fractions |
 | [`larzscript-tsp`](https://github.com/drlarzlalaa/larzscript-tsp) | The travelling salesman problem: exact brute force, nearest neighbour and 2-opt, with a study of how good the heuristics are |
 | [`larzscript-astar`](https://github.com/drlarzlalaa/larzscript-astar) | BFS, A* and greedy best-first search through grid mazes, with ASCII paths and a comparison study; identical to a Python heapq reference |
+| [`larzscript-flow`](https://github.com/drlarzlalaa/larzscript-flow) | Maximum flow, minimum cut and bipartite matching (Edmonds-Karp); checked against brute-force cuts, with printed flows validated |
 | [`larzscript-sat`](https://github.com/drlarzlalaa/larzscript-sat) | A DPLL SAT solver: DIMACS input, verified models, model counting, random 3-SAT; every verdict checked against brute force |
 | [`larzscript-bloom`](https://github.com/drlarzlalaa/larzscript-bloom) | A Bloom filter: the exact false-positive theory against a simulation, and sizing a filter for a target rate |
 | [`larzscript-mandelbrot`](https://github.com/drlarzlalaa/larzscript-mandelbrot) | The Mandelbrot set in text and an estimate of its area; every pixel matches a Python reference |
@@ -208,6 +209,7 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-placeholders`](https://github.com/drlarzlalaa/py-placeholders) | Finds unfilled template placeholders and missing merge fields in emails before sending, in every common syntax |
 | [`py-sqlcheck`](https://github.com/drlarzlalaa/py-sqlcheck) | Catches dangerous and mistaken SQL before you run it: UPDATE or DELETE without WHERE, = NULL, DROP and TRUNCATE, unbalanced quotes; executes nothing |
 | [`py-diskreport`](https://github.com/drlarzlalaa/py-diskreport) | A read-only report of where the disk space went: biggest folders, files and types, with old, empty and same-size hints |
+| [`py-manifest`](https://github.com/drlarzlalaa/py-manifest) | Creates, verifies and compares checksum manifests in the sha256sum format: changed, missing and unlisted files |
 
 ## Getting LarzOS
 
