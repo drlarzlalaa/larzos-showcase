@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-100 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+102 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -133,6 +133,7 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-queue`](https://github.com/drlarzlalaa/larzscript-queue) | M/M/c queues: exact Erlang C waiting times, a customer-by-customer simulation, and the hockey-stick effect near full load |
 | [`larzscript-elo`](https://github.com/drlarzlalaa/larzscript-elo) | The Elo rating system plus a tournament simulation: how well ratings recover hidden true strength, and the K trade-off |
 | [`larzscript-birthday`](https://github.com/drlarzlalaa/larzscript-birthday) | The birthday paradox: exact chances, a simulation, and how many items until a collision is likely for any number of slots |
+| [`larzscript-coupon`](https://github.com/drlarzlalaa/larzscript-coupon) | The coupon collector's problem: average draws to collect everything, the chance after N draws (two independent methods), and a simulation |
 | [`larzscript-pendulum`](https://github.com/drlarzlalaa/larzscript-pendulum) | A pendulum's period against its amplitude: the exact formula and a simulation agree, the textbook one does not |
 | [`larzscript-heat`](https://github.com/drlarzlalaa/larzscript-heat) | Heat diffusion: the explicit scheme blows up past r = 1/2, Crank-Nicolson stays bounded but not always accurate |
 | [`larzscript-lorenz`](https://github.com/drlarzlalaa/larzscript-lorenz) | Deterministic chaos: the Lorenz system, the butterfly effect and the Lyapunov exponent |
@@ -218,6 +219,7 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-readability`](https://github.com/drlarzlalaa/py-readability) | Flesch, Flesch-Kincaid, Gunning fog, SMOG, Coleman-Liau and ARI readability scores for English text |
 | [`py-cidr`](https://github.com/drlarzlalaa/py-cidr) | CIDR arithmetic for IPv4 and IPv6: info, contains, merge, subtract and split, verified against the standard library |
 | [`py-cronnext`](https://github.com/drlarzlalaa/py-cronnext) | Next run times of a cron expression (lists, ranges, steps, names, aliases, the day-of-month/weekday OR rule), checked against brute force |
+| [`py-wcag`](https://github.com/drlarzlalaa/py-wcag) | WCAG colour contrast checker: ratios, AA/AAA verdicts and the closest colour that passes |
 
 ## Getting LarzOS
 
