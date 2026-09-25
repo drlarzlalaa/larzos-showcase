@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-68 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+70 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -110,6 +110,7 @@ tests were written.
 | [`larz-dupes`](https://github.com/drlarzlalaa/larz-dupes) | Finds duplicate files by content, read-only: groups by size, then SHA-256, and totals the wasted space |
 | [`larz-diff`](https://github.com/drlarzlalaa/larz-diff) | A line diff with the shortest possible edit script; unified output that `patch` can apply, plus edit distance |
 | [`larz-calc`](https://github.com/drlarzlalaa/larz-calc) | A calculator with real operator precedence (shunting-yard), fractional powers and scientific notation; checked against Python's arithmetic |
+| [`larz-hash`](https://github.com/drlarzlalaa/larz-hash) | SHA-256, SHA-1, MD5, CRC-32 and Adler-32 in pure Larzscript (no bit operators); identical to hashlib and zlib on 725+ digests |
 | [`larz-csvstat`](https://github.com/drlarzlalaa/larz-csvstat) | Column summaries, frequency tables and text histograms for any CSV file |
 | [`larz-logstat`](https://github.com/drlarzlalaa/larz-logstat) | Visitors, top paths, hourly load, errors and bots from Apache/Nginx access logs |
 | [`larz-textstat`](https://github.com/drlarzlalaa/larz-textstat) | Word counts, Flesch readability, reading time, top words and longest sentences |
@@ -186,6 +187,7 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-semver`](https://github.com/drlarzlalaa/py-semver) | Semantic Versioning 2.0.0: validate, compare, bump and match ranges, following the specification |
 | [`py-mdcheck`](https://github.com/drlarzlalaa/py-mdcheck) | Checks Markdown offline: unclosed fences, heading levels, broken relative links and #anchors, table column counts |
 | [`py-mailcopycheck`](https://github.com/drlarzlalaa/py-mailcopycheck) | Checks email copy before sending, offline: subject and body heuristics, link and unsubscribe problems, header mismatches |
+| [`py-zonediff`](https://github.com/drlarzlalaa/py-zonediff) | Lints DNS zone files and diffs two versions offline, flagging risky changes to MX, NS, SPF, DMARC and DKIM |
 
 ## Getting LarzOS
 
