@@ -89,7 +89,7 @@ run those two with the OS library on the path:
 The same author's other repositories. Larzscript is the language LarzOS is
 written in, so most of these are written in it too; the last group is
 ordinary Python, for the jobs where its ecosystem is the right tool. All
-66 are MIT-licensed and have a test suite that runs in CI. The newer ones also
+68 are MIT-licensed and have a test suite that runs in CI. The newer ones also
 spell out what they do **not** do, and most compare their output with an
 independent Python implementation or with published reference data before the
 tests were written.
@@ -148,6 +148,7 @@ program output. Several are teaching tools, and say so.
 | [`larzscript-pagerank`](https://github.com/drlarzlalaa/larzscript-pagerank) | PageRank on a small link graph, checked against an exact linear-system solution |
 | [`larzscript-paths`](https://github.com/drlarzlalaa/larzscript-paths) | Shortest paths: Dijkstra and Bellman-Ford with negative cycles, checked against Floyd-Warshall and a path verifier |
 | [`larzscript-cipher`](https://github.com/drlarzlalaa/larzscript-cipher) | The Caesar and Vigenère ciphers and how to break them (chi-squared, index of coincidence); a history lesson, not security |
+| [`larzscript-kmeans`](https://github.com/drlarzlalaa/larzscript-kmeans) | k-means clustering with a k-means++ start and the elbow method, with ASCII plots; identical to a Python reference on 64 settings |
 | [`larzscript-regex`](https://github.com/drlarzlalaa/larzscript-regex) | A regular-expression engine (Thompson NFA, no backtracking blow-up), checked against Python's `re` on over 900 pattern/text pairs |
 | [`larzscript-sudoku`](https://github.com/drlarzlalaa/larzscript-sudoku) | A Sudoku solver and uniqueness checker (fewest-candidates-first search), checked against an independent Python solver |
 | [`larzscript-queens`](https://github.com/drlarzlalaa/larzscript-queens) | The n-queens puzzle: all solutions and symmetry classes, matching the published sequences and a bitmask solver |
@@ -184,6 +185,7 @@ Zero dependencies, standard library only, tested on Python 3.9 to 3.13.
 | [`py-envcheck`](https://github.com/drlarzlalaa/py-envcheck) | Lints .env files and compares them with .env.example offline; never prints a value |
 | [`py-semver`](https://github.com/drlarzlalaa/py-semver) | Semantic Versioning 2.0.0: validate, compare, bump and match ranges, following the specification |
 | [`py-mdcheck`](https://github.com/drlarzlalaa/py-mdcheck) | Checks Markdown offline: unclosed fences, heading levels, broken relative links and #anchors, table column counts |
+| [`py-mailcopycheck`](https://github.com/drlarzlalaa/py-mailcopycheck) | Checks email copy before sending, offline: subject and body heuristics, link and unsubscribe problems, header mismatches |
 
 ## Getting LarzOS
 
